@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		127777321F83045100A470A2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 127777311F83045000A470A2 /* libz.tbd */; };
 		OBJ_1000 /* intrusive_hash_map.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* intrusive_hash_map.c */; };
 		OBJ_1001 /* mlog.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* mlog.c */; };
 		OBJ_1002 /* operation.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* operation.c */; };
@@ -746,6 +747,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		127777311F83045000A470A2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		OBJ_10 /* byte_buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = byte_buffer.c; sourceTree = "<group>"; };
 		OBJ_101 /* dns_resolver_ares.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dns_resolver_ares.c; sourceTree = "<group>"; };
 		OBJ_102 /* grpc_ares_ev_driver_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = grpc_ares_ev_driver_posix.c; sourceTree = "<group>"; };
@@ -1549,6 +1551,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				127777321F83045100A470A2 /* libz.tbd in Frameworks */,
 				OBJ_1289 /* Czlib.framework in Frameworks */,
 				OBJ_1290 /* BoringSSL.framework in Frameworks */,
 			);
@@ -1593,6 +1596,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		127777301F83045000A470A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				127777311F83045000A470A2 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_100 /* c_ares */ = {
 			isa = PBXGroup;
 			children = (
@@ -2533,6 +2544,7 @@
 				OBJ_902 /* third_party */,
 				OBJ_903 /* Dependencies */,
 				OBJ_928 /* Products */,
+				127777301F83045000A470A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
