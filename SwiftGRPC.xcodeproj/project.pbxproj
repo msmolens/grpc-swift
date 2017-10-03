@@ -736,6 +736,13 @@
 			remoteGlobalIDString = OBJ_1604;
 			remoteInfo = gRPC;
 		};
+		128E72911F84253A004E0137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 128E728B1F8424BF004E0137;
+			remoteInfo = SwiftPackageManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -3452,6 +3459,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		128E728B1F8424BF004E0137 /* SwiftPackageManager */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "build -v -Xcc -ISources/BoringSSL/include";
+			buildConfigurationList = 128E728E1F8424BF004E0137 /* Build configuration list for PBXLegacyTarget "SwiftPackageManager" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/swift;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = SwiftPackageManager;
+			passBuildSettingsInEnvironment = 0;
+			productName = SwiftPackageManager;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		OBJ_1293 /* BoringSSL */ = {
 			isa = PBXNativeTarget;
@@ -3521,6 +3545,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				128E72921F84253A004E0137 /* PBXTargetDependency */,
 			);
 			name = Czlib;
 			productName = Czlib;
@@ -3553,6 +3578,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					128E728B1F8424BF004E0137 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W38PE5Y733;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftGRPC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3571,6 +3603,7 @@
 				OBJ_1293 /* BoringSSL */,
 				OBJ_1604 /* gRPC */,
 				OBJ_1628 /* gRPCTests */,
+				128E728B1F8424BF004E0137 /* SwiftPackageManager */,
 			);
 		};
 /* End PBXProject section */
@@ -4290,6 +4323,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		128E72921F84253A004E0137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 128E728B1F8424BF004E0137 /* SwiftPackageManager */;
+			targetProxy = 128E72911F84253A004E0137 /* PBXContainerItemProxy */;
+		};
 		OBJ_1291 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_944 /* Czlib */;
@@ -4343,6 +4381,95 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		128E728C1F8424BF004E0137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W38PE5Y733;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		128E728D1F8424BF004E0137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W38PE5Y733;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		OBJ_1295 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4658,6 +4785,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		128E728E1F8424BF004E0137 /* Build configuration list for PBXLegacyTarget "SwiftPackageManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				128E728C1F8424BF004E0137 /* Debug */,
+				128E728D1F8424BF004E0137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		OBJ_1294 /* Build configuration list for PBXNativeTarget "BoringSSL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
