@@ -620,8 +620,6 @@
 		OBJ_1636 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_932 /* BoringSSL.framework */; };
 		OBJ_1637 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_931 /* CgRPC.framework */; };
 		OBJ_1638 /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_933 /* gRPC.framework */; };
-		OBJ_940 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_906 /* main.swift */; };
-		OBJ_942 /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_930 /* Czlib.framework */; };
 		OBJ_950 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_908 /* adler32.c */; };
 		OBJ_951 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_909 /* compress.c */; };
 		OBJ_952 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_910 /* crc32.c */; };
@@ -668,13 +666,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		128E72801F8421FC004E0137 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_944;
-			remoteInfo = Czlib;
-		};
 		128E72811F8421FC004E0137 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -1536,7 +1527,6 @@
 		OBJ_925 /* zlib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		OBJ_926 /* zutil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		OBJ_927 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap"; sourceTree = "<group>"; };
-		OBJ_929 /* zlib-example */ = {isa = PBXFileReference; lastKnownFileType = text; path = "zlib-example"; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_93 /* round_robin.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = round_robin.c; sourceTree = "<group>"; };
 		OBJ_930 /* Czlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Czlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_931 /* CgRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CgRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1583,14 +1573,6 @@
 				OBJ_1636 /* BoringSSL.framework in Frameworks */,
 				OBJ_1637 /* CgRPC.framework in Frameworks */,
 				OBJ_1638 /* gRPC.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_941 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_942 /* Czlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2530,7 +2512,7 @@
 			path = asn1;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -2545,7 +2527,6 @@
 				OBJ_903 /* Dependencies */,
 				OBJ_928 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_516 /* base64 */ = {
@@ -3425,7 +3406,6 @@
 		OBJ_928 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_929 /* zlib-example */,
 				OBJ_930 /* Czlib.framework */,
 				OBJ_931 /* CgRPC.framework */,
 				OBJ_932 /* BoringSSL.framework */,
@@ -3530,23 +3510,6 @@
 			productReference = OBJ_934 /* gRPCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		OBJ_935 /* zlib-example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_936 /* Build configuration list for PBXNativeTarget "zlib-example" */;
-			buildPhases = (
-				OBJ_939 /* Sources */,
-				OBJ_941 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_943 /* PBXTargetDependency */,
-			);
-			name = "zlib-example";
-			productName = zlib_example;
-			productReference = OBJ_929 /* zlib-example */;
-			productType = "com.apple.product-type.tool";
-		};
 		OBJ_944 /* Czlib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_945 /* Build configuration list for PBXNativeTarget "Czlib" */;
@@ -3598,12 +3561,11 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_928 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_935 /* zlib-example */,
 				OBJ_944 /* Czlib */,
 				OBJ_966 /* CgRPC */,
 				OBJ_1293 /* BoringSSL */,
@@ -3977,14 +3939,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_1633 /* GRPCTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_939 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_940 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4386,11 +4340,6 @@
 			target = OBJ_1604 /* gRPC */;
 			targetProxy = 128E728A1F8421FC004E0137 /* PBXContainerItemProxy */;
 		};
-		OBJ_943 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = OBJ_944 /* Czlib */;
-			targetProxy = 128E72801F8421FC004E0137 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -4600,52 +4549,6 @@
 			};
 			name = Release;
 		};
-		OBJ_937 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
-					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
-				);
-				INFOPLIST_FILE = SwiftGRPC.xcodeproj/zlib_example_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				TARGET_NAME = "zlib-example";
-			};
-			name = Debug;
-		};
-		OBJ_938 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/zlib.git--9016602441419864029/Sources/Czlib/include",
-					"$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib",
-				);
-				INFOPLIST_FILE = SwiftGRPC.xcodeproj/zlib_example_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/SymlinkLibs/";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/SwiftGRPC.xcodeproj/GeneratedModuleMap/Czlib/module.modulemap";
-				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
-				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				TARGET_NAME = "zlib-example";
-			};
-			name = Release;
-		};
 		OBJ_946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4787,15 +4690,6 @@
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_936 /* Build configuration list for PBXNativeTarget "zlib-example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_937 /* Debug */,
-				OBJ_938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
